@@ -1,8 +1,5 @@
-FROM openjdk:11-jre-slim
+FROM openjdk:11
 
-WORKDIR /app
-COPY target/concesionario-0.0.1-SNAPSHOT.jar app.jar
+ADD ./concesionario-0.0.1-SNAPSHOT.jar concesionario-0.0.1-SNAPSHOT.jar 
 
-EXPOSE 8080
-
-CMD ["java", "-jar", "app.jar"]
+ENTRYPOINT [ "java", "-jar", "concesionario-0.0.1-SNAPSHOT.jar" ]
