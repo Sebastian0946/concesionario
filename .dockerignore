@@ -1,70 +1,31 @@
-# flyctl launch added from .gitignore
-**\HELP.md
-**\target
-!**\.mvn\wrapper\maven-wrapper.jar
-!**\**\src\main\**\target
-!**\**\src\test\**\target
+# Ignore archivos de configuración de IDE
+*.iml
+.idea/
+.vscode/
 
-### STS ###
-**\.apt_generated
-**\.classpath
-**\.factorypath
-**\.project
-**\.settings
-**\.springBeans
-**\.sts4-cache
+# Ignore archivos de registro
+*.log
+logs/
 
-### IntelliJ IDEA ###
-**\.idea
-**\*.iws
-**\*.iml
-**\*.ipr
+# Ignore archivos generados automáticamente
+target/
 
-### NetBeans ###
-nbproject\private
-nbbuild
-dist
-nbdist
-.nb-gradle
-**\build
-!**\**\src\main\**\build
-!**\**\src\test\**\build
+# Ignore archivos de prueba y ejemplos
+test/
+examples/
 
-### VS Code ###
-**\.vscode
+# Ignore archivos de documentación
+docs/
 
-# flyctl launch added from bin\.gitignore
-bin\**\HELP.md
-bin\**\target
-!bin\**\.mvn\wrapper\maven-wrapper.jar
-!bin\**\**\src\main\**\target
-!bin\**\**\src\test\**\target
+# Ignore archivos de claves privadas
+*.key
+.pem
 
-### STS ###
-bin\**\.apt_generated
-bin\**\.classpath
-bin\**\.factorypath
-bin\**\.project
-bin\**\.settings
-bin\**\.springBeans
-bin\**\.sts4-cache
-
-### IntelliJ IDEA ###
-bin\**\.idea
-bin\**\*.iws
-bin\**\*.iml
-bin\**\*.ipr
-
-### NetBeans ###
-bin\nbproject\private
-bin\nbbuild
-bin\dist
-bin\nbdist
-bin\.nb-gradle
-bin\**\build
-!bin\**\**\src\main\**\build
-!bin\**\**\src\test\**\build
-
-### VS Code ###
-bin\**\.vscode
-fly.toml
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/application.properties
+!**/src/main/**/application.yml
+!**/src/main/**/application.yaml
+!**/src/main/**/application-{profile}.properties
+!**/src/main/**/application-{profile}.yml
+!**/src/main/**/application-{profile}.yaml
