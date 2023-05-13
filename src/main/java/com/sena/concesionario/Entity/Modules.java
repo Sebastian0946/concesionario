@@ -19,7 +19,7 @@ public class Modules {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "code", nullable = true)
+    @Column(name = "code", nullable = false)
     private String code;
 
     @Column(name = "description", nullable = false)

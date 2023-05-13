@@ -20,7 +20,7 @@ public class Persons {
 	private Integer id;
 
 	@Column(name = "document_type", nullable = false)
-	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "code")
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "string")
 	private TipoDocumentoEnum documentType;
 
 	@Column(name = "document", nullable = false, length = 12)

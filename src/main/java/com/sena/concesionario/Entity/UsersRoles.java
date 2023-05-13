@@ -23,11 +23,11 @@ public class UsersRoles {
     private Integer id;
 
     @ManyToOne (fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "rol_id", unique = true, nullable = false)
+    @JoinColumn(name = "rol_id", unique = false, nullable = false)
     private Roles rolId;
     
     @ManyToOne (fetch = FetchType.EAGER, optional = false)
-    @JoinColumn(name = "user_id", unique = true, nullable = false)
+    @JoinColumn(name = "user_id", unique = false, nullable = false)
     private Users userId;
     
 	@Column(name = "state", nullable = false)
