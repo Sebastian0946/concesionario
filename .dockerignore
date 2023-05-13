@@ -22,7 +22,6 @@ docs/
 .pem
 
 target/
-!.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/application.properties
 !**/src/main/**/application.yml
 !**/src/main/**/application.yaml
