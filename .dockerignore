@@ -7,9 +7,6 @@
 *.log
 logs/
 
-# Ignore archivos generados automáticamente
-target/
-
 # Ignore archivos de prueba y ejemplos
 test/
 examples/
@@ -20,11 +17,3 @@ docs/
 # Ignore archivos de claves privadas
 *.key
 .pem
-
-target/
-!**/src/main/**/application.properties
-!**/src/main/**/application.yml
-!**/src/main/**/application.yaml
-!**/src/main/**/application-{profile}.properties
-!**/src/main/**/application-{profile}.yml
-!**/src/main/**/application-{profile}.yaml

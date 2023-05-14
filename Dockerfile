@@ -1,7 +1,5 @@
-FROM adoptopenjdk/openjdk11:jdk-11.0.9.1_1-alpine-slim
-
-WORKDIR /app
-
-COPY target/concesionario-0.0.1-SNAPSHOT.jar /classes/
-
-CMD ["java", "-jar", "concesionario-0.0.1-SNAPSHOT.jar"]
+FROM openjdk:11
+VOLUME /tmp
+EXPOSE 9000
+ADD ./target/concesionario-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
